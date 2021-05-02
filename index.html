@@ -25,30 +25,14 @@
 
 <body>
 
-    <h1>AirTags are a win!</h1>
-    <h2 id='countdown'></h2>
+    <h1>AirTags are a win!<br><br></h1>
     <div>
         <a href='https://apple.com/airtag'><img src="airtag.png" alt="AirTag"></a>
     </div>
-    
 
-    <script>
-        var countDownDate = new Date("April 23, 2021 13:00:00").getTime();
-        var x = setInterval(function() {
-          var now = new Date().getTime();  
-          var distance = countDownDate - now; 
-          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-          document.getElementById("countdown").innerHTML = 'Pre-order in ' + days + "d " + hours + "h "
-          + minutes + "m " + seconds + "s ";
-          if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("countdown").innerHTML = "AirTags are now available for pre-order!";
-          }
-        }, 1000);
-    </script>
+    <div class='credit'>
+      <p class='creditText'><i>A random website from <a href='https://itsnoahevans.co.uk/?src=airtags_win'>Noah Evans</a></i></p>
+    </div>
     
 
 </body>

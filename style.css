@@ -1,20 +1,31 @@
 h1 {
     font-family: "Open Sans", sans-serif;
     font-size: 80px;
+	font-weight: bolder;
     text-align: center;
+	
 }
 
 h2 {
     font-family: "Open Sans", sans-serif;
     font-size: 40px;
+	font-weight: bold;
     text-align: center;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+	font-weight: lighter;
+    text-align: left;
+	
 }
 
 div {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 800px;
+    height: 500px;
 }
   
 img {
@@ -28,7 +39,14 @@ img {
 	animation: float 2s ease-in-out infinite;
 }
 
-
+.box {
+    position:relative;
+}
+.creditText {
+	position: absolute;
+	bottom: 0;
+	right: 1;
+}
 
 @keyframes float {
 	0% {
